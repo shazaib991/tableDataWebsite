@@ -13,7 +13,6 @@ Object.keys(data).forEach((element) => {
 //iterate over values of data which is about 17 and iterate over each of the values in data using foreach
 for (let i = 0; i < Object.values(data).length; i++) {
     let tr = document.createElement("tr");
-    tr.setAttribute("id", "tr");
     Object.values(data).forEach((element) => {
         let td = document.createElement("td");
         td.innerText = element[i];
