@@ -1,4 +1,17 @@
-import { data } from "./data.js";
+const url = "https://thawing-cliffs-56280.herokuapp.com/api/v1/tableData";
+
+const fetchData = async () => {
+    try {
+        const response = await fetch(url);
+        const tableData = await response.json();
+
+        return tableData;
+    } catch (err) {
+        console.log(err);
+    }
+};
+
+const data = await fetchData();
 
 let tr = document.getElementById("tr");
 let tbody = document.getElementById("tbody");

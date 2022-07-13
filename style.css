@@ -4,6 +4,7 @@
 }
 
 table {
+    width: 100%;
     font-family: arial, sans-serif;
     border-collapse: collapse;
     background: linear-gradient(to bottom right, rgb(121, 18, 218), rgb(121, 18, 218), rgb(80, 64, 228));
