@@ -23,8 +23,10 @@ Object.keys(data).forEach((element) => {
     tr.appendChild(td);
 });
 
-//iterate over values of data which is about 17 and iterate over each of the values in data using foreach
-for (let i = 0; i < Object.values(data).length; i++) {
+//iterate over values of data which should be 54 and iterate over each of the values in data using foreach
+const LengthOfDataValues = Object.values(data)[0];
+
+for (let i = 0; i < Object.keys(LengthOfDataValues).length; i++) {
     let tr = document.createElement("tr");
     Object.values(data).forEach((element) => {
         let td = document.createElement("td");
